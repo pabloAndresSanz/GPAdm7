@@ -1,0 +1,12 @@
+C:\Program Files\glassfish-4.1.1\bin>asadmin
+Use "exit" to exit and "help" for online help.
+asadmin> create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property
+portNumber=5432:password=postgres:user=postgres:serverName=localhost:databaseName=gpdatabase:connectionAttributes=\;create\\=true gpdatabasepool
+JDBC connection pool gpdatabasepool created successfully.
+Command create-jdbc-connection-pool executed successfully.
+asadmin>
+
+asadmin> create-jdbc-resource --connectionpoolid gpdatabasepool jdbc/gpdatabasepool
+JDBC resource jdbc/gpdatabasepool created successfully.
+Command create-jdbc-resource executed successfully.
+asadmin>
