@@ -5,7 +5,7 @@ WHERE pg_stat_activity.datname = 'gpdatabase'
 DROP DATABASE gpdatabase;
 
 CREATE DATABASE gpdatabase;
-\connect gpdatabse;
+connect gpdatabse;
 -- Enable PostGIS (includes raster)
 CREATE EXTENSION postgis;
 drop table if exists medicoespecialidad;
